@@ -1,0 +1,8 @@
+.app-grid__nav {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: var(--color-pink);
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
