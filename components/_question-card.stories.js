@@ -1,5 +1,3 @@
-import '../styles/index.css'
-
 import './_question-card.css'
 import html from './_question-card.html'
 

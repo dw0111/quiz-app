@@ -1,5 +1,3 @@
-import '../styles/index.css'
-
 import './_app-grid.css'
 import html from './_app-grid.html'
 
