@@ -1,5 +1,44 @@
 .main__card {
-  border: 2px solid var(--color-yellow);
+  border: 3px solid var(--color-yellow);
   border-radius: 15px;
   background-color: var(--color-snow);
+  width: 85vw;
+  padding: 5px;
+}
+
+.card__question-section {
+  text-align: left;
+  padding: 5px;
+}
+
+.card__answer-section {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.card__tag-selection {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.card__tag {
+  border: 1px solid var(--color-pink);
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 2px 4px;
+  font-size: 70%;
+}
+
+.card__answer-toggle {
+  border: 1px solid var(--color-pink);
+  border-radius: 5px;
+  background-color: #eee;
+  width: 40vw;
+}
+
+.card__answer-toggle[open] {
 }

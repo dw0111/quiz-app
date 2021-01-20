@@ -1,6 +1,13 @@
 .app-grid {
   display: grid;
-  grid-template-rows: 75px auto 75px;
+  grid-template-rows: 75px auto 70px;
   height: 100vh;
   background: linear-gradient(var(--color-snow), var(--color-lilac));
+}
+
+.app-grid__main {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  overflow-y: scroll;
 }
