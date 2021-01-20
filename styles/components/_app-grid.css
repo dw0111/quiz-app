@@ -2,5 +2,5 @@
   display: grid;
   grid-template-rows: 75px auto 75px;
   height: 100vh;
-  background-color: var(--color-snow);
+  background: linear-gradient(var(--color-snow), var(--color-lilac));
 }

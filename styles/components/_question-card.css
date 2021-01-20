@@ -1,0 +1,5 @@
+.main__card {
+  border: 2px solid var(--color-yellow);
+  border-radius: 15px;
+  background-color: var(--color-snow);
+}
