@@ -12,7 +12,13 @@ body {
 h1 {
   line-height: 1.3;
   text-align: center;
-  margin: auto;
+  margin: 0;
+}
+
+h1::first-letter {
+  color: var(--color-lilac);
+  font-style: bold;
+  font-size: 120%;
 }
 
 a {
