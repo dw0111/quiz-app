@@ -9,6 +9,10 @@
   border-top: 2px solid var(--color-pink);
 }
 
-.nav-link {
-  display: grid;
+.nav__link {
+  filter: drop-shadow(4px 4px 3px var(--color-purple));
+}
+
+.nav__link--current {
+  filter: drop-shadow(4px 4px 3px var(--color-snow));
 }
