@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzix Bookmarks</title>
+    <link rel="stylesheet" href="styles/bookmarks.css" />
+  </head>
+  <body class="app-grid">
+    <header class="app-grid__header">
+      <h1>Bookmarks</h1>
+    </header>
+
+    <main class="app-grid__main">
+      <section class="card">
+        <header class="card__header">
+          <h2>Question</h2>
+          <p>Which city is the capital of Germany?</p>
+          <button class="card__bookmark--marked"></button>
+        </header>
+        <section class="card__answer-section">
+          <details class="card__answer-toggle">
+            <summary>Show Answer</summary>
+            Germany's capital is Berlin.
+          </details>
+          <ul class="card__tag-list">
+            <li class="card__tag">#Geography</li>
+            <li class="card__tag">#Germany</li>
+            <li class="card__tag">#Politics</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <nav class="navigation">
+      <a class="nav__link" href="/index.html">
+        <img src="../images/home-solid.svg" alt="Home" width="30" height="30" />
+        <div>Home</div></a
+      >
+      <a class="nav__link--current" href="/bookmarks.html">
+        <img
+          src="../images/bookmark-solid.svg"
+          alt="Bookmark"
+          width="30"
+          height="30"
+        />
+        <div>Bookmark</div></a
+      >
+      <a class="nav__link" href="">
+        <img
+          src="../images/plus-square-solid.svg"
+          alt="Create"
+          width="30"
+          height="30"
+        />
+        <div>Create</div></a
+      >
+      <a class="nav__link" href="">
+        <img src="../images/cogs-solid.svg" alt="Icon" width="30" height="30" />
+        <div>Settings</div></a
+      >
+    </nav>
+  </body>
+</html>

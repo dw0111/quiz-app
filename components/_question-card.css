@@ -16,7 +16,23 @@
 .card__bookmark {
   position: absolute;
   top: -15px;
-  right: 15px;
+  right: 10px;
+  background-image: url('../images/bookmark-regular.svg');
+  background-size: cover;
+  width: 30px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.card__bookmark--marked {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  background-image: url('../images/bookmark-solid.svg');
+  background-size: cover;
+  width: 30px;
+  height: 40px;
   background-color: transparent;
   border: none;
 }
