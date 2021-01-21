@@ -8,7 +8,6 @@
 .app-grid__main {
   display: grid;
   justify-content: center;
-  gap: 15px;
   overflow-y: scroll;
   padding: 20px 0;
 }
