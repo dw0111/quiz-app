@@ -7,8 +7,15 @@
 }
 
 .card__header {
+  position: relative;
   text-align: left;
   padding: 5px;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: -15px;
+  right: 15px;
 }
 
 .card__answer-section {

@@ -8,3 +8,7 @@
   line-height: 1;
   border-top: 2px solid var(--color-pink);
 }
+
+.nav-link {
+  display: grid;
+}
