@@ -9,5 +9,6 @@
   display: grid;
   align-items: start;
   overflow-y: scroll;
-  padding: 20px 0;
+  gap: 20px;
+  padding: 20px;
 }
