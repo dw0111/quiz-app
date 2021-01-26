@@ -1,0 +1,9 @@
+.bd-1-pink {
+  border: 1px solid var(--color-pink);
+  border-radius: 5px;
+}
+
+.bd-3-yellow {
+  border: 3px solid var(--color-yellow);
+  border-radius: 5px;
+}

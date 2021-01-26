@@ -1,0 +1,29 @@
+.create-form__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.create-form__input {
+  resize: none;
+  margin-bottom: 1.875em;
+  width: 100%;
+  background: var(--color-snow);
+}
+
+textarea.create-form__input {
+  border-radius: 15px;
+}
+
+.create-form__input-label {
+  display: block;
+  padding: 0.313em 0.625em;
+  margin-bottom: 0.625em;
+  background: var(--color-snow);
+}
+
+.create-form__submit-button {
+  width: 150px;
+  justify-self: center;
+  background: var(--color-snow);
+  padding: 0.313em 0.625em;
+}
