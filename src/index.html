@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script defer type="module" src="./js/index.js"></script>
   </head>
   <body class="app-grid">
     <header class="app-grid__header">
-      <h1>Quizzix</h1>
+      <h1 data-js="header">Quizzix</h1>
     </header>
 
     <main class="app-grid__main">
+      <section class="app-grid__main" data-js="home">
       <section class="card bd-3-yellow">
         <header class="card__header">
           <h2>Question</h2>
           <p>Which city is the capital of Germany?</p>
-          <button class="card__bookmark"></button>
+          <button class="card__bookmark" data-js="sign-bookmark"></button>
         </header>
         <section class="card__answer-section">
           <details class="card__answer-toggle bd-1-pink">
@@ -35,7 +37,7 @@
         <header class="card__header">
           <h2>Question</h2>
           <p>Which city is the capital of Germany?</p>
-          <button class="card__bookmark"></button>
+          <button class="card__bookmark" data-js="sign-bookmark"></button>
         </header>
         </header>
         <section class="card__answer-section">
@@ -55,7 +57,7 @@
         <header class="card__header">
           <h2>Question</h2>
           <p>Which city is the capital of Germany?</p>
-          <button class="card__bookmark"></button>
+          <button class="card__bookmark" data-js="sign-bookmark"></button>
         </header>
         <section class="card__answer-section">
           <details class="card__answer-toggle bd-1-pink">
@@ -69,33 +71,95 @@
           </ul>
         </section>
       </section>
+    </section>
+
+<section class="app-grid__main hidden" data-js="bookmarks">
+  <section class="card bd-3-yellow">
+    <header class="card__header">
+      <h2>Question</h2>
+      <p>Which city is the capital of Germany?</p>
+      <button class="card__bookmark--marked"  data-js="sign-bookmark"></button>
+    </header>
+    <section class="card__answer-section">
+      <details class="card__answer-toggle bd-1-pink">
+        <summary>Show Answer</summary>
+        Germany's capital is Berlin.
+      </details>
+      <ul class="card__tag-list">
+        <li class="card__tag bd-1-pink">#Geography</li>
+        <li class="card__tag bd-1-pink">#Germany</li>
+        <li class="card__tag bd-1-pink">#Politics</li>
+      </ul>
+    </section>
+  </section>
+</section>
+
+  <section class="app-grid__main hidden" data-js="create-question">
+    <form class="create-form__grid" action="#">
+      <label
+        for="add-question-input"
+        class="create-form__input-label bd-1-pink"
+        >Add a question here:</label
+      >
+      <textarea
+        name="question"
+        id="add-question-input"
+        cols="30"
+        rows="10"
+        class="create-form__input bd-3-yellow"
+      ></textarea>
+      <label for="add-answer-input" class="create-form__input-label bd-1-pink"
+        >What is the answer to your question?</label
+      >
+      <textarea
+        name="question"
+        id="add-answer-input"
+        cols="30"
+        rows="10"
+        class="create-form__input bd-3-yellow"
+      ></textarea>
+      <label for="add-tags-input" class="create-form__input-label bd-1-pink"
+        >Please add some tags to describe your question:</label
+      >
+      <input
+        id="add-tags-input"
+        type="text"
+        class="create-form__input bd-3-yellow"
+      />
+      <button type="submit" class="create-form__submit-button bd-3-yellow">
+        Submit
+      </button>
+    </form>
+  </section>
+</main>
+</section>
     </main>
     <nav class="navigation">
-      <a class="nav__link--current" href="#">
+      <span class="nav__link--current" data-js="home-button" href="#">
         <img src="./images/home-solid.svg" alt="" width="30" height="30" />
-        <div>Home</div></a
+        <div>Home</div></span
       >
-      <a class="nav__link" href="bookmarks.html">
+      <span class="nav__link" data-js="bookmarks-button" href="bookmarks.html">
         <img
           src="./images/bookmark-solid.svg"
           alt=""
           width="30"
           height="30"
         />
-        <div>Bookmarks</div></a
+        <div>Bookmarks</div></span
       >
-      <a class="nav__link" href="create.html">
+      <span class="nav__link" data-js="create-button" href="create.html">
         <img
           src="./images/plus-square-solid.svg"
           alt=""
           width="30"
           height="30"
         />
-        <div>Create</div></a
+        <div>Create</div></span
       >
-      <a class="nav__link" href="settings.html">
+      <span class="nav__link" href="settings.html">
         <img src="./images/cogs-solid.svg" alt="" width="30" height="30" />
-        <div>Settings</div></a
+        <div>Settings</div></span
       >
     </nav>
   </body>
