@@ -64,11 +64,9 @@ cardsBookmarks.forEach(bookmark => {
 
 //      Create-form max letter count
 createFormInputLabels.forEach(label => {
-  const textarea = document.querySelector('[data-js="create-form__input"]')
-  const counter = document.querySelector(
-    '[data-js="create-form__letter-count"]'
-  )
+  const textarea = label.querySelector('[data-js="create-form__input"]')
+  const counter = label.querySelector('[data-js="create-form__letter-count"]')
   textarea.addEventListener('input', event => {
-    counter.textContent = `${event.currentTarget.value.length}/250`
+    counter.textContent = `${event.currentTarget.value.length}/${textarea.maxLength}`
   })
 })
