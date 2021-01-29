@@ -70,3 +70,4 @@ createFormInputLabels.forEach(label => {
     counter.textContent = `${event.currentTarget.value.length}/${textarea.maxLength}`
   })
 })
+//      /Create-form max letter count
