@@ -48,13 +48,8 @@ createButton.addEventListener('click', () => {
   header.textContent = 'New question'
 })
 
-cardBookmark.forEach(mark => {
-  mark.addEventListener('click', () => {
-    if (mark.classList.contains('card__bookmark--marked')) {
-      mark.classList.remove('card__bookmark--marked')
-      mark.classList.add('card__bookmark')
-    } else {
-      mark.classList.add('card__bookmark--marked')
-    }
+cardBookmark.forEach(bookmark => {
+  bookmark.addEventListener('click', () => {
+    bookmark.classList.toggle('card__bookmark--marked')
   })
 })
