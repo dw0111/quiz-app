@@ -5,5 +5,5 @@
 
 .bd-3-yellow {
   border: 3px solid var(--color-yellow);
-  border-radius: 5px;
+  border-radius: 15px;
 }

@@ -1,5 +1,6 @@
 console.log('Hello World')
 
+//      Define constants
 const home = document.querySelector('[data-js="home"]')
 const bookmarks = document.querySelector('[data-js="bookmarks"]')
 const createQuestion = document.querySelector('[data-js="create-question"]')
@@ -11,7 +12,9 @@ const createButton = document.querySelector('[data-js="create-button"]')
 const cardBookmark = document.querySelectorAll('[data-js="sign-bookmark"]')
 
 const header = document.querySelector('[data-js="header"]')
+//      /Define constants
 
+//      Navigation
 homeButton.addEventListener('click', () => {
   home.classList.remove('hidden')
   bookmarks.classList.add('hidden')
@@ -47,7 +50,9 @@ createButton.addEventListener('click', () => {
 
   header.textContent = 'New question'
 })
+//      /Navigation
 
+//    Toggle bookmarks
 cardBookmark.forEach(mark => {
   mark.addEventListener('click', () => {
     if (mark.classList.contains('card__bookmark--marked')) {
@@ -58,3 +63,6 @@ cardBookmark.forEach(mark => {
     }
   })
 })
+//    /Toggle bookmarks
+
+//    Form max letter count
