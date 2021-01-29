@@ -1,7 +1,6 @@
 .card {
   background-color: var(--color-snow);
   padding: 5px;
-  border-radius: 15px;
 }
 
 .card__header {

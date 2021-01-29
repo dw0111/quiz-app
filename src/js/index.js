@@ -1,5 +1,4 @@
-console.log('Hello World')
-
+//      Define constants
 const home = document.querySelector('[data-js="home"]')
 const bookmarks = document.querySelector('[data-js="bookmarks"]')
 const createQuestion = document.querySelector('[data-js="create-question"]')
@@ -8,12 +7,19 @@ const homeButton = document.querySelector('[data-js="home-button"]')
 const bookmarksButton = document.querySelector('[data-js="bookmarks-button"]')
 const createButton = document.querySelector('[data-js="create-button"]')
 
-const cardsBookmarks = document.querySelectorAll('[data-js="sign-bookmark"]')
-
 const header = document.querySelector('[data-js="header"]')
 
-const createQuestionForm = document.querySelector('[data-js="create-form"]')
+const cardsBookmarks = document.querySelectorAll('[data-js="sign-bookmark"]')
 
+const createFormInputLabels = document.querySelectorAll(
+  '[data-js="create-form__input-label"]'
+)
+const createQuestionForm = document.querySelector('[data-js="create-form"]')
+//      /Define constants
+
+
+
+//      Navigation
 homeButton.addEventListener('click', () => {
   home.classList.remove('hidden')
   bookmarks.classList.add('hidden')
@@ -49,12 +55,15 @@ createButton.addEventListener('click', () => {
 
   header.textContent = 'New question'
 })
+//      /Navigation
 
+//      Toggle bookmarks
 cardsBookmarks.forEach(bookmark => {
   bookmark.addEventListener('click', () => {
     bookmark.classList.toggle('card__bookmark--marked')
   })
 })
+//      /Toggle bookmarks
 
 createQuestionForm.addEventListener('submit', () => {
   createQuestionForm.reset()
@@ -64,3 +73,14 @@ createQuestionForm.addEventListener('submit', () => {
   formInput.focus()
   createQuestion.scrollIntoView()
 })
+
+
+//      Create-form max letter count
+createFormInputLabels.forEach(label => {
+  const textarea = label.querySelector('[data-js="create-form__input"]')
+  const counter = label.querySelector('[data-js="create-form__letter-count"]')
+  textarea.addEventListener('input', event => {
+    counter.textContent = `${event.currentTarget.value.length}/${textarea.maxLength}`
+  })
+})
+//      /Create-form max letter count
