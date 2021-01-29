@@ -12,6 +12,8 @@ const cardsBookmarks = document.querySelectorAll('[data-js="sign-bookmark"]')
 
 const header = document.querySelector('[data-js="header"]')
 
+const createForm = document.querySelector('[data-js="create-form"]')
+
 homeButton.addEventListener('click', () => {
   home.classList.remove('hidden')
   bookmarks.classList.add('hidden')
@@ -52,4 +54,17 @@ cardsBookmarks.forEach(bookmark => {
   bookmark.addEventListener('click', () => {
     bookmark.classList.toggle('card__bookmark--marked')
   })
+})
+
+createForm.addEventListener('submit', () => {
+  createForm.reset()
+  document
+    .querySelector('[data-js="create-form__input"]')
+    .focus({ preventScroll: true })
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  })
+  alert('Your new question was added!')
 })
