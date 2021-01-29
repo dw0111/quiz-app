@@ -5,16 +5,14 @@
 
 .create-form__input {
   resize: none;
-  margin-bottom: 1.875em;
+  margin: 1.5em 0;
   width: 100%;
-  background: var(--color-snow);
-}
-
-textarea.create-form__input {
-  border-radius: 15px;
+  background: white;
+  padding: 5px;
 }
 
 .create-form__input-label {
+  position: relative;
   display: block;
   padding: 0.313em 0.625em;
   margin-bottom: 0.625em;
@@ -26,4 +24,13 @@ textarea.create-form__input {
   justify-self: center;
   background: var(--color-snow);
   padding: 0.313em 0.625em;
+  border-radius: 5px;
+}
+
+.create-form__letter-count {
+  position: absolute;
+  right: 17px;
+  bottom: 10px;
+  color: var(--color-lilac);
+  font-size: 60%;
 }

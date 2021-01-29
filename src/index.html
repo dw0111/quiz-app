@@ -94,38 +94,58 @@
   </section>
 </section>
 
-  <section class="app-grid__main hidden" data-js="create-question">
-    <form class="create-form__grid" action="#">
+  <section class="hidden" data-js="create-question">
+    <form class="create-form__grid app-grid__main" action="#">
       <label
-        for="add-question-input"
-        class="create-form__input-label bd-1-pink"
-        >Add a question here:</label
-      >
-      <textarea
+        class="create-form__input-label bd-3-yellow"
+        data-js="create-form__input-label"
+        >What is your question?
+        <textarea
         name="question"
-        id="add-question-input"
         cols="30"
         rows="10"
-        class="create-form__input bd-3-yellow"
+        maxlength = "250"
+        class="create-form__input bd-1-pink"
+        data-js="create-form__input"
       ></textarea>
-      <label for="add-answer-input" class="create-form__input-label bd-1-pink"
-        >What is the answer to your question?</label
+      <span class="create-form__letter-count" data-js="create-form__letter-count"
+      >0/250</span>
+        </label
       >
-      <textarea
+
+      <label 
+        class="create-form__input-label bd-3-yellow"
+        data-js="create-form__input-label"
+        >What is the answer to your question:
+        <textarea
         name="question"
-        id="add-answer-input"
         cols="30"
         rows="10"
-        class="create-form__input bd-3-yellow"
+        maxlength = "250"
+        class="create-form__input bd-1-pink"
+        data-js="create-form__input"
       ></textarea>
-      <label for="add-tags-input" class="create-form__input-label bd-1-pink"
-        >Please add some tags to describe your question:</label
+      <span class="create-form__letter-count" data-js="create-form__letter-count"
+      >0/250</span>
+        </label
       >
-      <input
-        id="add-tags-input"
-        type="text"
-        class="create-form__input bd-3-yellow"
-      />
+      
+      <label
+        class="create-form__input-label bd-3-yellow"
+        data-js="create-form__input-label"
+        >Please add some tags to describe your question
+        <textarea
+        name="question"
+        cols="30"
+        rows="2"
+        maxlength = "50"
+        class="create-form__input bd-1-pink"
+        data-js="create-form__input"
+      ></textarea>
+      <span class="create-form__letter-count" data-js="create-form__letter-count"
+      >0/50</span>
+        </label
+      >
       <button type="submit" class="create-form__submit-button bd-3-yellow">
         Submit
       </button>
