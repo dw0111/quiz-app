@@ -12,7 +12,7 @@ const cardsBookmarks = document.querySelectorAll('[data-js="sign-bookmark"]')
 
 const header = document.querySelector('[data-js="header"]')
 
-const createForm = document.querySelector('[data-js="create-form"]')
+const createQuestionForm = document.querySelector('[data-js="create-form"]')
 
 homeButton.addEventListener('click', () => {
   home.classList.remove('hidden')
@@ -56,8 +56,11 @@ cardsBookmarks.forEach(bookmark => {
   })
 })
 
-createForm.addEventListener('submit', () => {
-  createForm.reset()
-  document.querySelector('[data-js="create-form__input"]').focus()
+createQuestionForm.addEventListener('submit', () => {
+  createQuestionForm.reset()
+  const formInput = createQuestionForm.querySelector(
+    '[data-js="create-form__input"]'
+  )
+  formInput.focus()
   createQuestion.scrollIntoView()
 })
