@@ -59,5 +59,5 @@ cardsBookmarks.forEach(bookmark => {
 createForm.addEventListener('submit', () => {
   createForm.reset()
   document.querySelector('[data-js="create-form__input"]').focus()
-  alert('Your new question was added!')
+  createQuestion.scrollIntoView()
 })
