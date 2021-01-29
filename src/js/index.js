@@ -8,7 +8,7 @@ const homeButton = document.querySelector('[data-js="home-button"]')
 const bookmarksButton = document.querySelector('[data-js="bookmarks-button"]')
 const createButton = document.querySelector('[data-js="create-button"]')
 
-const cardBookmark = document.querySelectorAll('[data-js="sign-bookmark"]')
+const cardsBookmarks = document.querySelectorAll('[data-js="sign-bookmark"]')
 
 const header = document.querySelector('[data-js="header"]')
 
@@ -48,13 +48,8 @@ createButton.addEventListener('click', () => {
   header.textContent = 'New question'
 })
 
-cardBookmark.forEach(mark => {
-  mark.addEventListener('click', () => {
-    if (mark.classList.contains('card__bookmark--marked')) {
-      mark.classList.remove('card__bookmark--marked')
-      mark.classList.add('card__bookmark')
-    } else {
-      mark.classList.add('card__bookmark--marked')
-    }
+cardsBookmarks.forEach(bookmark => {
+  bookmark.addEventListener('click', () => {
+    bookmark.classList.toggle('card__bookmark--marked')
   })
 })
