@@ -94,8 +94,9 @@
   </section>
 </section>
 
-  <section class="hidden" data-js="create-question">
-    <form class="create-form__grid app-grid__main" action="#">
+
+  <section class="app-grid__main hidden" data-js="create-question">
+    <form class="create-form__grid" data-js="create-form">
       <label
         class="create-form__input-label bd-3-yellow"
         data-js="create-form__input-label"
@@ -146,7 +147,12 @@
       >0/50</span>
         </label
       >
-      <button type="submit" class="create-form__submit-button bd-3-yellow">
+      <input
+        id="add-tags-input"
+        type="text"
+        class="create-form__input bd-3-yellow"
+      />
+      <button class="create-form__submit-button bd-3-yellow" data-js="create-form__submit-button">
         Submit
       </button>
     </form>
