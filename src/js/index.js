@@ -11,13 +11,12 @@ const header = document.querySelector('[data-js="header"]')
 
 const cardsBookmarks = document.querySelectorAll('[data-js="sign-bookmark"]')
 
+const createQuestionForm = document.querySelector('[data-js="create-form"]')
+
 const createFormInputLabels = document.querySelectorAll(
   '[data-js="create-form__input-label"]'
 )
-const createQuestionForm = document.querySelector('[data-js="create-form"]')
 //      /Define constants
-
-
 
 //      Navigation
 homeButton.addEventListener('click', () => {
@@ -65,6 +64,7 @@ cardsBookmarks.forEach(bookmark => {
 })
 //      /Toggle bookmarks
 
+//      Reset form on submit
 createQuestionForm.addEventListener('submit', () => {
   createQuestionForm.reset()
   const formInput = createQuestionForm.querySelector(
@@ -73,7 +73,7 @@ createQuestionForm.addEventListener('submit', () => {
   formInput.focus()
   createQuestion.scrollIntoView()
 })
-
+//      /Reset form on submit
 
 //      Create-form max letter count
 createFormInputLabels.forEach(label => {
