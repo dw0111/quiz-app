@@ -67,13 +67,23 @@ cardsBookmarks.forEach(bookmark => {
 //      /Toggle bookmarks
 
 //      Reset form on submit
-createQuestionForm.addEventListener('submit', () => {
+createQuestionForm.addEventListener('submit', event => {
+  event.preventDefault()
   createQuestionForm.reset()
   const formInput = createQuestionForm.querySelector(
     '[data-js="create-form__input"]'
   )
   formInput.focus()
   createQuestion.scrollIntoView()
+
+  const counters = document.querySelectorAll(
+    '[data-js="create-form__letter-count"]'
+  )
+  createFormInputLabels.forEach(label => {
+    const textarea = label.querySelector('[data-js="create-form__input"]')
+    const counter = label.querySelector('[data-js="create-form__letter-count"]')
+    counter.textContent = `0/${textarea.maxLength}`
+  })
 })
 //      /Reset form on submit
 
