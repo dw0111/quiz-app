@@ -88,13 +88,16 @@ createFormInputLabels.forEach(label => {
 //      /Create-form max letter count
 
 //      Show_Hide answers
-//cards.forEach(card => {
-const cardAnswerToggle = document.querySelector(
-  '[data-js="card__answer-toggle"]'
-)
-const cardAnswer = document.querySelector('[data-js="card__answer"]')
-cardAnswerToggle.addEventListener('click', () => {
-  cardAnswer.classList.toggle = 'hidden'
+cards.forEach(card => {
+  const cardAnswerToggle = card.querySelector('[data-js="card__answer-toggle"]')
+  const cardAnswer = card.querySelector('[data-js="card__answer"]')
+  cardAnswerToggle.addEventListener('click', () => {
+    cardAnswer.classList.toggle('hidden')
+    if ((cardAnswerToggle.value = 'Hide Answer')) {
+      cardAnswerToggle.value = 'Show Answer'
+    } else {
+      cardAnswerToggle.value = 'Hide Answer'
+    }
+  })
 })
-//})
 //      /Show_Hide answers

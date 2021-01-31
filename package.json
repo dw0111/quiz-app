@@ -16,7 +16,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badabam/quiz-app.git"
+    "url": ""
   },
   "bugs": {
     "url": "https://github.com/badabam/quiz-app/issues"
