@@ -1,4 +1,4 @@
-<section class="card bd-3-yellow">
+<section class="card bd-3-yellow" data-js="card">
   <header class="card__header">
     <h2>Question</h2>
     <p>Which city is the capital of Germany?</p>
@@ -7,10 +7,11 @@
   <section class="card__answer-section bd-1-pink">
     <input
       type="button"
-      class="card__answer-toggle bd-3-yellow"
+      class="card__answer-toggle"
       value="Show Answer"
+      data-js="card__answer-toggle"
     />
-    <p hidden>Germany's capital is Berlin.</p>
+    <p class="hidden" data-js="card__answer">Germany's capital is Berlin.</p>
   </section>
   <ul class="card__tag-list">
     <li class="card__tag bd-1-pink">#Geography</li>

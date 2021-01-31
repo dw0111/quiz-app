@@ -16,6 +16,8 @@ const createQuestionForm = document.querySelector('[data-js="create-form"]')
 const createFormInputLabels = document.querySelectorAll(
   '[data-js="create-form__input-label"]'
 )
+
+const cards = document.querySelectorAll('[data-js="card"]')
 //      /Define constants
 
 //      Navigation
@@ -84,3 +86,15 @@ createFormInputLabels.forEach(label => {
   })
 })
 //      /Create-form max letter count
+
+//      Show_Hide answers
+//cards.forEach(card => {
+const cardAnswerToggle = document.querySelector(
+  '[data-js="card__answer-toggle"]'
+)
+const cardAnswer = document.querySelector('[data-js="card__answer"]')
+cardAnswerToggle.addEventListener('click', () => {
+  cardAnswer.classList.toggle = 'hidden'
+})
+//})
+//      /Show_Hide answers

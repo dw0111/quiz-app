@@ -14,24 +14,27 @@
 
     <main class="app-grid__main">
       <section class="app-grid__main" data-js="home">
-      <section class="card bd-3-yellow">
-        <header class="card__header">
-          <h2>Question</h2>
-          <p>Which city is the capital of Germany?</p>
-          <button class="card__bookmark" data-js="sign-bookmark"></button>
-        </header>
-        <section class="card__answer-section">
-          <details class="card__answer-toggle bd-1-pink">
-            <summary>Show Answer</summary>
-            Germany's capital is Berlin.
-          </details>
+        <section class="card bd-3-yellow" data-js="card">
+          <header class="card__header">
+            <h2>Question</h2>
+            <p>Which city is the capital of Germany?</p>
+            <button class="card__bookmark" data-js="sign-bookmark"></button>
+          </header>
+          <section class="card__answer-section bd-1-pink">
+            <input
+              type="button"
+              class="card__answer-toggle"
+              value="Show Answer"
+              data-js="card__answer-toggle"
+            />
+            <p class="hidden" card__answer" data-js="card__answer">Germany's capital is Berlin.</p>
+          </section>
           <ul class="card__tag-list">
             <li class="card__tag bd-1-pink">#Geography</li>
             <li class="card__tag bd-1-pink">#Germany</li>
             <li class="card__tag bd-1-pink">#Politics</li>
           </ul>
         </section>
-      </section>
 
       <section class="card bd-3-yellow">
         <header class="card__header">
