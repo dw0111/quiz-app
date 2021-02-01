@@ -13,7 +13,7 @@
     </header>
 
     <main class="app-grid__main">
-      <section class="app-grid__main" data-js="home">
+      <section class="app-grid__main" data-js="page" data-name="home">
         <section class="card bd-3-yellow" data-js="card">
           <header class="card__header">
             <h2>Question</h2>
@@ -27,7 +27,9 @@
               value="Show Answer"
               data-js="card__answer-toggle"
             />
-            <p class="hidden card__answer" data-js="card__answer">Germany's capital is Berlin.</p>
+            <p class="hidden card__answer" data-js="card__answer">
+              Germany's capital is Berlin.
+            </p>
           </section>
           <ul class="card__tag-list">
             <li class="card__tag bd-1-pink">#Geography</li>
@@ -49,7 +51,9 @@
               value="Show Answer"
               data-js="card__answer-toggle"
             />
-            <p class="hidden card__answer" data-js="card__answer">Germany's capital is Berlin.</p>
+            <p class="hidden card__answer" data-js="card__answer">
+              Germany's capital is Berlin.
+            </p>
           </section>
           <ul class="card__tag-list">
             <li class="card__tag bd-1-pink">#Geography</li>
@@ -71,7 +75,9 @@
               value="Show Answer"
               data-js="card__answer-toggle"
             />
-            <p class="hidden card__answer" data-js="card__answer">Germany's capital is Berlin.</p>
+            <p class="hidden card__answer" data-js="card__answer">
+              Germany's capital is Berlin.
+            </p>
           </section>
           <ul class="card__tag-list">
             <li class="card__tag bd-1-pink">#Geography</li>
@@ -81,106 +87,133 @@
         </section>
       </section>
 
-<section class="app-grid__main hidden" data-js="bookmarks">
-  <section class="card bd-3-yellow" data-js="card">
-    <header class="card__header">
-      <h2>Question</h2>
-      <p>Which city is the capital of Germany?</p>
-      <button class="card__bookmark" data-js="sign-bookmark"></button>
-    </header>
-    <section class="card__answer-section bd-1-pink">
-      <input
-        type="button"
-        class="card__answer-toggle"
-        value="Show Answer"
-        data-js="card__answer-toggle"
-      />
-      <p class="hidden card__answer" data-js="card__answer">Germany's capital is Berlin.</p>
-    </section>
-    <ul class="card__tag-list">
-      <li class="card__tag bd-1-pink">#Geography</li>
-      <li class="card__tag bd-1-pink">#Germany</li>
-      <li class="card__tag bd-1-pink">#Politics</li>
-    </ul>
-  </section>
-</section>
-
-
-  <section class="app-grid__main hidden" data-js="create-question">
-    <form class="create-form__grid" data-js="create-form">
-      <label
-        class="create-form__input-label bd-3-yellow"
-        data-js="create-form__input-label"
-        >What is your question?
-        <textarea
-        name="question"
-        cols="30"
-        rows="10"
-        maxlength = "250"
-        class="create-form__input bd-1-pink"
-        data-js="create-form__input"
-      ></textarea>
-      <span class="create-form__letter-count" data-js="create-form__letter-count"
-      >0/250</span>
-        </label
+      <section
+        class="app-grid__main hidden"
+        data-js="page"
+        data-name="bookmarks"
       >
+        <section class="card bd-3-yellow" data-js="card">
+          <header class="card__header">
+            <h2>Question</h2>
+            <p>Which city is the capital of Germany?</p>
+            <button class="card__bookmark" data-js="sign-bookmark"></button>
+          </header>
+          <section class="card__answer-section bd-1-pink">
+            <input
+              type="button"
+              class="card__answer-toggle"
+              value="Show Answer"
+              data-js="card__answer-toggle"
+            />
+            <p class="hidden card__answer" data-js="card__answer">
+              Germany's capital is Berlin.
+            </p>
+          </section>
+          <ul class="card__tag-list">
+            <li class="card__tag bd-1-pink">#Geography</li>
+            <li class="card__tag bd-1-pink">#Germany</li>
+            <li class="card__tag bd-1-pink">#Politics</li>
+          </ul>
+        </section>
+      </section>
 
-      <label 
-        class="create-form__input-label bd-3-yellow"
-        data-js="create-form__input-label"
-        >What is the answer to your question:
-        <textarea
-        name="question"
-        cols="30"
-        rows="10"
-        maxlength = "250"
-        class="create-form__input bd-1-pink"
-        data-js="create-form__input"
-      ></textarea>
-      <span class="create-form__letter-count" data-js="create-form__letter-count"
-      >0/250</span>
-        </label
+      <section
+        class="app-grid__main hidden"
+        data-js="page"
+        data-name="create-question"
       >
-      
-      <label
-        class="create-form__input-label bd-3-yellow"
-        data-js="create-form__input-label"
-        >Please add some tags to describe your question
-        <textarea
-        name="question"
-        cols="30"
-        rows="2"
-        maxlength = "50"
-        class="create-form__input bd-1-pink"
-        data-js="create-form__input"
-      ></textarea>
-      <span class="create-form__letter-count" data-js="create-form__letter-count"
-      >0/50</span>
-        </label
-      >
-      <button class="create-form__submit-button bd-3-yellow" data-js="create-form__submit-button">
-        Submit
-      </button>
-    </form>
-  </section>
-</main>
-</section>
+        <form class="create-form__grid" data-js="create-form">
+          <label
+            class="create-form__input-label bd-3-yellow"
+            data-js="create-form__input-label"
+            >What is your question?
+            <textarea
+              name="question"
+              cols="30"
+              rows="10"
+              maxlength="250"
+              class="create-form__input bd-1-pink"
+              data-js="create-form__input"
+            ></textarea>
+            <span
+              class="create-form__letter-count"
+              data-js="create-form__letter-count"
+              >0/250</span
+            >
+          </label>
+
+          <label
+            class="create-form__input-label bd-3-yellow"
+            data-js="create-form__input-label"
+            >What is the answer to your question:
+            <textarea
+              name="question"
+              cols="30"
+              rows="10"
+              maxlength="250"
+              class="create-form__input bd-1-pink"
+              data-js="create-form__input"
+            ></textarea>
+            <span
+              class="create-form__letter-count"
+              data-js="create-form__letter-count"
+              >0/250</span
+            >
+          </label>
+
+          <label
+            class="create-form__input-label bd-3-yellow"
+            data-js="create-form__input-label"
+            >Please add some tags to describe your question
+            <textarea
+              name="question"
+              cols="30"
+              rows="2"
+              maxlength="50"
+              class="create-form__input bd-1-pink"
+              data-js="create-form__input"
+            ></textarea>
+            <span
+              class="create-form__letter-count"
+              data-js="create-form__letter-count"
+              >0/50</span
+            >
+          </label>
+          <button
+            class="create-form__submit-button bd-3-yellow"
+            data-js="create-form__submit-button"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
     </main>
+
     <nav class="navigation">
-      <span class="nav__link--current" data-js="home-button" href="#">
+      <span
+        class="nav__link nav__link--current"
+        data-js="nav-button"
+        data-name="home"
+        href="#"
+      >
         <img src="./images/home-solid.svg" alt="" width="30" height="30" />
         <div>Home</div></span
       >
-      <span class="nav__link" data-js="bookmarks-button" href="bookmarks.html">
-        <img
-          src="./images/bookmark-solid.svg"
-          alt=""
-          width="30"
-          height="30"
-        />
+      <span
+        class="nav__link"
+        data-js="nav-button"
+        data-name="bookmarks"
+        href="bookmarks.html"
+      >
+        <img src="./images/bookmark-solid.svg" alt="" width="30" height="30" />
         <div>Bookmarks</div></span
       >
-      <span class="nav__link" data-js="create-button" href="create.html">
+      <span
+        class="nav__link"
+        data-js="nav-button"
+        data-name="create-question"
+        href="create.html"
+      >
         <img
           src="./images/plus-square-solid.svg"
           alt=""
@@ -189,7 +222,12 @@
         />
         <div>Create</div></span
       >
-      <span class="nav__link" href="settings.html">
+      <span
+        class="nav__link"
+        data-js="nav-button"
+        data-name="settings"
+        href="settings.html"
+      >
         <img src="./images/cogs-solid.svg" alt="" width="30" height="30" />
         <div>Settings</div></span
       >
