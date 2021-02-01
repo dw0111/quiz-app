@@ -11,13 +11,14 @@ const header = document.querySelector('[data-js="header"]')
 
 const cardsBookmarks = document.querySelectorAll('[data-js="sign-bookmark"]')
 
+const createQuestionForm = document.querySelector('[data-js="create-form"]')
+
 const createFormInputLabels = document.querySelectorAll(
   '[data-js="create-form__input-label"]'
 )
-const createQuestionForm = document.querySelector('[data-js="create-form"]')
+
+const cards = document.querySelectorAll('[data-js="card"]')
 //      /Define constants
-
-
 
 //      Navigation
 homeButton.addEventListener('click', () => {
@@ -65,15 +66,26 @@ cardsBookmarks.forEach(bookmark => {
 })
 //      /Toggle bookmarks
 
-createQuestionForm.addEventListener('submit', () => {
+//      Reset form on submit
+createQuestionForm.addEventListener('submit', event => {
+  event.preventDefault()
   createQuestionForm.reset()
   const formInput = createQuestionForm.querySelector(
     '[data-js="create-form__input"]'
   )
   formInput.focus()
   createQuestion.scrollIntoView()
-})
 
+  const counters = document.querySelectorAll(
+    '[data-js="create-form__letter-count"]'
+  )
+  createFormInputLabels.forEach(label => {
+    const textarea = label.querySelector('[data-js="create-form__input"]')
+    const counter = label.querySelector('[data-js="create-form__letter-count"]')
+    counter.textContent = `0/${textarea.maxLength}`
+  })
+})
+//      /Reset form on submit
 
 //      Create-form max letter count
 createFormInputLabels.forEach(label => {
@@ -84,3 +96,18 @@ createFormInputLabels.forEach(label => {
   })
 })
 //      /Create-form max letter count
+
+//      Show_Hide answers
+cards.forEach(card => {
+  const cardAnswerToggle = card.querySelector('[data-js="card__answer-toggle"]')
+  const cardAnswer = card.querySelector('[data-js="card__answer"]')
+  cardAnswerToggle.addEventListener('click', () => {
+    cardAnswer.classList.toggle('hidden')
+    if ((cardAnswerToggle.value = 'Hide Answer')) {
+      cardAnswerToggle.value = 'Show Answer'
+    } else {
+      cardAnswerToggle.value = 'Hide Answer'
+    }
+  })
+})
+//      /Show_Hide answers

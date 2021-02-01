@@ -16,12 +16,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badabam/quiz-app.git"
+    "url": "https://github.com/dw0111/quiz-app"
   },
   "bugs": {
-    "url": "https://github.com/badabam/quiz-app/issues"
+    "url": "https://github.com/dw0111/quiz-app/issues"
   },
-  "homepage": "https://github.com/badabam/quiz-app#readme",
+  "homepage": "https://github.com/dw0111/quiz-app#readme",
   "description": "",
   "devDependencies": {
     "@babel/core": "^7.12.10",

@@ -1,8 +1,6 @@
 # Quiz App
 
-## Template usage
-
-_Don't forget to update the author (and more) in the package.json_
+Basic quiz app to get acquainted with HTML, CSS and JS. Made for and during the neuefische Web Dev Bootcamp.
 
 ## Installation
 

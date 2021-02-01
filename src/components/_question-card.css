@@ -1,4 +1,5 @@
 .card {
+  display: grid;
   background-color: var(--color-snow);
   padding: 5px;
 }
@@ -34,14 +35,27 @@
 }
 
 .card__answer-section {
+  justify-self: center;
   display: grid;
   justify-items: center;
   text-align: center;
+  width: fit-content;
+  max-width: 100%;
+  background-color: var(--color-yellow);
+  overflow: hidden;
 }
 
 .card__answer-toggle {
-  background-color: #eee;
-  padding: 0 5px;
+  background-color: var(--color-yellow);
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.card__answer {
+  padding: 5px;
+  border-top: 1px solid var(--color-pink);
+  margin: 0;
 }
 
 .card__tag-list {
